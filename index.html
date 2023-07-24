@@ -29,7 +29,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
+              'gradient-start': '#FF8938',
+              'gradient-end': '#F00',
             },
           },
         },
@@ -56,7 +57,11 @@
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button
+              class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-lg"
+            >
+              Explore More
+            </button>
           </div>
           <!-- right part -->
           <div class="flex-1">
@@ -298,7 +303,7 @@
           humour, or randomised words which don't look even slightly believable.
         </p>
         <!-- card  -->
-        <div class="flex flex-col md:flex-row gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
           <!-- first card -->
           <div class="card bg-base-100 border">
             <figure class="px-10 pt-10">
@@ -344,5 +349,65 @@
         </div>
       </section>
     </main>
+    <footer class="p-10 bg-gradient-to-r from-[#e1bdbd] to-[#e5cece]">
+      <div class="flex gap-4 justify-between my-20 mx-10">
+        <img src="./images/cup.png" alt="" />
+        <div>
+          <p>
+            <span>Ready to get strated?</span>
+            <button
+              class="btn bg-gradient-to-r from-gradient-start to-gradient-end border-none"
+            >
+              Get Started
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Subscribe to our newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-4 bg-transparent border-b-2 border-black outline-none"
+              />
+              <button
+                class="btn bg-gradient-to-r from-gradient-start to-gradient-end absolute top-0 right-0 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
